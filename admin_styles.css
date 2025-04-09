@@ -1,0 +1,224 @@
+/* admin_styles.css */
+
+/* Common styles */
+body {
+    background-color: #f5f6fa;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="checkbox"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input[type="submit"],
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover,
+form button:hover {
+    background-color: #45a049;
+}
+
+.alert {
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: none;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+    border-bottom: none;
+    padding: 0.75rem 1.25rem;
+}
+
+/* Table styles */
+.table {
+    color: #2c3e50;
+    font-size: 13px;
+}
+
+.table thead th {
+    background-color: #f8f9fc;
+    color: #4a5568;
+    font-weight: 600;
+    border-bottom: 2px solid #e3e6f0;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+/* Form styles */
+.form-control, .form-select {
+    border: 1px solid #e2e8f0;
+    font-size: 13px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.1);
+}
+
+/* Button styles */
+.btn {
+    font-size: 13px;
+    padding: 0.3rem 0.75rem;
+}
+
+.btn-primary {
+    background: #4e73df;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #224abe;
+}
+
+/* Badge styles */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Search box */
+.input-group-sm .form-control {
+    border-right: none;
+}
+
+.input-group-sm .btn {
+    border-left: none;
+    padding: 0.25rem 0.75rem;
+}
+
+/* Responsive table */
+.table-responsive {
+    border-radius: 4px;
+    background: white;
+}
+
+/* Status badges */
+.badge.bg-warning {
+    background-color: #f6c23e !important;
+    color: #fff;
+}
+
+.badge.bg-success {
+    background-color: #1cc88a !important;
+}
+
+.badge.bg-danger {
+    background-color: #e74a3b !important;
+}
+
+.success {
+    background-color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button.delete-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+button.edit-btn:hover {
+    background-color: #45a049;
+}
