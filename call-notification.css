@@ -1,0 +1,64 @@
+.call-notification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.incoming-call-notification {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.caller-info {
+    margin-bottom: 20px;
+}
+
+.caller-info i {
+    font-size: 40px;
+    color: #0084ff;
+    margin-bottom: 10px;
+}
+
+.notification-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.accept-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.decline-btn {
+    background: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.pulse {
+    animation: pulse 1s infinite;
+}
